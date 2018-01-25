@@ -1,0 +1,48 @@
+<!doctype html>
+<html >
+    <head>
+    <meta charset="UTF-8">
+    <title>PYAY</title>
+    <link rel="shortcut icon" type="image/ico" href="tubiao.jpg">
+    <style type="text/css">
+        #sex{
+            width: 5%;
+        }
+    </style>
+    </head>
+    <body>
+
+        <form action="send.php" method="post">
+            <label>用户名：<input type="text" name="username" id="username" placeholder="请输入姓名" required=""></label><br>
+            <label> 密码:<input type="password" name="password" id="password" placeholder="请输入密码" required=""></label><br>
+            <label>
+                邮箱：<input type="email" name="email" placeholder="请输入邮箱">
+            </label><br>
+            <label for="sex">性别：</label>
+            <input type="radio" name="sex" checked="男">男<br>
+            <input type="radio" name="sex" checked="">女<br>
+            <input type="checkbox" name="qingnianren">青年人<br>
+            <input type="checkbox" name="zhongnianren">中年人<br>
+            <input type="checkbox" name="laonianren">老年人<br>
+            <select>
+                <option value="1">青岛</option>
+                <option value="2">烟台</option>
+                <option value="3">潍坊</option>
+            </select>
+            <fieldset id="sex">
+                <legend>性别：</legend>
+                <label><input type="radio" name="sex" checked>男</label><br>
+                <label><input type="radio" name="sex">女</label>
+            </fieldset>
+            <p>
+               请选择数字：
+            <select name="number">
+                <option value="1">一</option>
+                <option value="2">二</option>
+                <option value="3">三</option>
+            </select>
+            <p><button>提交表单：</button>
+            </p>
+        </form>
+    </body>
+    </html>
